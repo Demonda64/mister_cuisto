@@ -87,7 +87,7 @@ article
     margin: 20px;
     padding: 25px;
     margin-top: 50px;
-    background-color:red;
+    
     border-radius: 6px;
     color: white;
     background-color: black;
@@ -118,6 +118,40 @@ img
     justify-content: space-between;
     margin: auto;
 }
+section {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+form {
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 6px;
+}
+
+input,
+button,
+textarea {
+    padding: 6px 12px;
+    margin: 0;
+    line-height: 32px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    border: 0;
+    border-bottom: 1px solid #999;
+    align-items: stretch;
+}
+
+::placeholder {
+    color: #CCC;
+}
+
 /* Fichier dédié à la prise en compte des paramètres responsives */
 img{
     max-width:100%;
