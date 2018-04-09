@@ -1,0 +1,152 @@
+body 
+    {
+        color:black;
+        background-color:white;
+        background-image:url(/home/step5/Images/fond.jpg);
+        background-size: cover;
+        text-align: center;
+        
+        }
+.entet
+{
+    width: 100%;
+    height: 285px;
+    background-color: rgb(240, 102, 102);
+    color: white;
+    font-size: large;
+    line-height: 150px;
+    text-align: center;
+    font-family: inherit;
+    border-radius: 6px;
+    position: relative;
+}
+
+.menu
+{
+    margin: auto;
+    width: auto;
+    height: 50px;
+    margin-top: 10px;
+    background-color: steelblue;
+    border-radius: 6px;
+}
+
+ul li 
+{
+    position: relative;
+    list-style: none;
+    float: left;
+    margin-left: 50px;
+    
+}
+
+ul li a
+{
+    text-decoration: none;
+    font-family: cursive;
+    display:block;
+    line-height: 50px;
+    width:100px;
+    color:black;
+    
+}
+
+ul li a:hover
+{
+    -webkit-transform: rotate(2deg);
+    
+}
+
+
+span
+{
+    position: absolute;
+    visibility: hidden;
+    
+}
+
+span li a{
+    clear: both;
+    display: block;
+    background-color: rgb(250, 8, 141);
+    width: 162px;
+    height: 30px;
+    text-align: center;
+    color: red;
+    border-top: 1px solid white;
+    margin-left: -95PX;
+    
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
+}
+
+article
+{
+    margin: 20px;
+    padding: 25px;
+    margin-top: 50px;
+    background-color:red;
+    border-radius: 6px;
+    color: white;
+    background-color: black;
+}
+
+img
+{
+    border: 2px solid white;
+    border-radius: 6px;
+    
+}
+
+#bloca
+{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+#blocb
+{
+    display: flex;
+    justify-content:center;
+    margin: auto;
+}
+#blocc
+{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+/* Fichier dédié à la prise en compte des paramètres responsives */
+img{
+    max-width:100%;
+}
+/* Exemples de media queries, ici.
+On utilise max > en dessous de la dimension identifiée, le navigateur prend en compte cette nouvelle mise en page */
+@media (max-width: 576px) {
+    
+}
+
+@media (max-width: 768px) {
+    /* Adaptation de la présentation des articles */
+    section{
+        flex-direction: column;
+    }
+    #menus  {
+        width:100%;
+        flex-direction: column;
+    }
+    /* Adaptation du menu */
+    #menu{
+        flex-direction: column;
+    }
+    
+   
+
+    
+}
+/* Min fonctionne à l'inverse de max */
+@media (min-width: 992px) {  }
+
+@media (min-width: 1200px) {  }
