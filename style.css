@@ -31,6 +31,77 @@ body
     border-radius: 6px;
 }
 
+.bouton{
+    display:block;
+    float:left;
+    cursor:pointer;
+    padding:5px 5px 5px 10px;
+    margin:10px 10px 0 0;
+    /* mise en forme du bouton */
+    background-color:#f0f0f0;
+    border:2px solid #b9b9b9;
+    border-top:1px solid #e2e2e2;
+    border-left:1px solid #e2e2e2;
+    text-decoration:none;
+  }
+  
+  .bouton p{
+    padding:0 5px 0 10px;
+    margin:0;
+    float:right;
+    line-height:25px;
+    height:25px;
+    /* mise en forme du texte */
+    font-family:Tahoma, Geneva, sans-serif;
+    font-size:12px;
+    color:#595c58;
+    text-decoration:none;
+    font-weight:bold;
+  }
+  
+  .bouton img{
+    width:25px;
+    height:25px;
+    border:none;
+    margin:0;
+    padding:0;    
+  }
+  
+  .bouton:hover{
+    background-color:#dbdada;
+  }
+  
+  .bouton:active{
+    background-color:#dbdada;
+    border:2px solid #b9b9b9;
+    border-bottom:1px solid #e2e2e2;
+    border-right:1px solid #e2e2e2;
+  }
+  
+  .bouton-supprimer {
+    background-color:#ffd0d0;
+    border:2px solid #e7abab;
+    border-top:1px solid #f1cfcf;
+    border-left:1px solid #f1cfcf;
+  }
+  .bouton-supprimer p {
+    color:#ff2525;
+  }
+  .bouton-supprimer:hover{
+    background-color:#ffbdbd;
+  }
+  
+  .bouton-supprimer:active {
+    background-color:#ffbdbd;
+    border:2px solid #e7abab;
+    border-bottom:1px solid #f1cfcf;
+    border-right:1px solid #f1cfcf;
+  }
+  
+  .bouton-suivant img {
+    float:right;
+  }
+
 ul li 
 {
     position: relative;
@@ -64,10 +135,20 @@ span
     visibility: hidden;
     
 }
-
-span li a{
-    clear: both;
+a
+{
+    text-decoration: underline;
     display: block;
+    color: steelblue;
+}
+a:hover
+{
+    color: red;
+}
+
+span a{
+    clear: both;
+    display: none;
     background-color: rgb(250, 8, 141);
     width: 162px;
     height: 30px;
@@ -136,7 +217,7 @@ form {
 }
 
 input,
-button,
+
 textarea {
     padding: 6px 12px;
     margin: 0;
