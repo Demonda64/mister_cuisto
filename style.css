@@ -218,24 +218,32 @@ form {
     align-items: stretch;
     border-radius: 6px;
 }
+input:focus:invalid
+{
+    border-color: red;
+    box-shadow:20px 20px 5px rgb(223, 119, 119); 
+}
+input:focus:valid
+{
+    border-color:green;
+    box-shadow:20px 20px 5px rgb(160, 247, 160); 
+} 
 
 input,
 textarea
  {
     padding: 6px 12px;
-    margin: 0;
+    margin: 10px;
     line-height: 32px;
     font-family: 'Dancing Script', cursive;
     font-size: 24px;
     border: 0;
-    border-bottom: 8px solid;
+    border-bottom:  solid;
     align-items: stretch;
     border-radius: 6px;
-    -webkit-appearance: none;
+    
 }
-*:required:after {
-    content: "*";
-  }
+
   
 
 input :focus 
@@ -244,18 +252,12 @@ input :focus
     box-shadow: black;
     
 }
-input:required invalid {
-    border: 2px solid red;
-  }
-  
-  input:required valid {
-    border: 2px solid green;
-  }
+
 
 
 
 ::placeholder {
-    color: ;
+    color:black;
 }
 
 /* Fichier dédié à la prise en compte des paramètres responsives */
