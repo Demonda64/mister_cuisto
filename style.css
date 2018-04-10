@@ -231,19 +231,25 @@ textarea
     border-bottom: 8px solid;
     align-items: stretch;
     border-radius: 6px;
+    -webkit-appearance: none;
 }
+*:required:after {
+    content: "*";
+  }
+  
 
 input :focus 
 {
     border:yellow;
+    box-shadow: black;
     
 }
-input:invalid {
-    border: 1px solid red;
+input:required invalid {
+    border: 2px solid red;
   }
   
-  input:valid {
-    border: 1px solid green;
+  input:required valid {
+    border: 2px solid green;
   }
 
 
