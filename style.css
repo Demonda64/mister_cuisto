@@ -57,6 +57,7 @@ body
     color:#595c58;
     text-decoration:none;
     font-weight:bold;
+    border-radius: 6px;
   }
   
   .bouton img{
@@ -83,6 +84,7 @@ body
     border:2px solid #e7abab;
     border-top:1px solid #f1cfcf;
     border-left:1px solid #f1cfcf;
+    border-radius: 6px;
   }
   .bouton-supprimer p {
     color:#ff2525;
@@ -100,6 +102,7 @@ body
   
   .bouton-suivant img {
     float:right;
+    border-radius: 6px;
   }
 
 ul li 
@@ -217,20 +220,36 @@ form {
 }
 
 input,
-
-textarea {
+textarea
+ {
     padding: 6px 12px;
     margin: 0;
     line-height: 32px;
     font-family: 'Dancing Script', cursive;
     font-size: 24px;
     border: 0;
-    border-bottom: 1px solid #999;
+    border-bottom: 8px solid;
     align-items: stretch;
+    border-radius: 6px;
 }
 
+input :focus 
+{
+    border:yellow;
+    
+}
+input:invalid {
+    border: 1px solid red;
+  }
+  
+  input:valid {
+    border: 1px solid green;
+  }
+
+
+
 ::placeholder {
-    color: #CCC;
+    color: ;
 }
 
 /* Fichier dédié à la prise en compte des paramètres responsives */
