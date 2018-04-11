@@ -74,6 +74,21 @@
                 <p>Retour à l'acceuil</p>
             </a>
         </form>
+        <script>
+            
+                var validation = document.getElementById("bouton_envoi");
+                var nom = document.getElementById("nom");
+                var nom_m =document.getElementById("nom_manquant");
+                validation.addEventListener("click", f_valid);
+            
+            function f_valid(event){ 
+                if (document.getElementById.validity.valueMissing) ; {
+                    event.preventDefault();
+                    nom_m.textContent = "Nom manquant";
+                    nom_m.style.color = "red";
+            
+            }
+            </script>
 
     </section>
 
