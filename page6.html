@@ -63,7 +63,7 @@
             </button>
 
             <a href="index.html" class="bouton bouton-suivant">
-                <img src="images/icone_suivante.png" alt="" />
+                <img src="images/icone_suivante.png" alt="Accueil" />
                 <p>Retour à l'acceuil</p>
             </a>
         </form>
@@ -79,7 +79,7 @@ var tooltips = document.querySelectorAll('.tooltip'),
     tooltipsLength = tooltips.length;
 
 for (var i = 0; i < tooltipsLength; i++) {
-    tooltips[i].style.display = 'none';
+    tooltips[i].style.display = 'block';
 }
 
 
@@ -88,7 +88,9 @@ for (var i = 0; i < tooltipsLength; i++) {
 function getTooltip(elements) {
 
 while (elements = elements.nextSibling) {
-    if (elements.className === 'tooltip') {
+    
+    if (elements.className === '.tooltip') {
+        
         return elements;
     }
 }
@@ -99,10 +101,10 @@ return false;
 
 check['nom'] = function(id) {
 
-var name = document.getElementById(id),
+var name = document.getElementById(nom),
     tooltipStyle = getTooltip(name).style;
 
-if (name.value.length >= 2) {
+if (nom.value.length >= 2) {
     name.className = 'correct';
     tooltipStyle.display = 'none';
     return true;
