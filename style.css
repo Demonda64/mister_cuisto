@@ -127,16 +127,7 @@ ul li a
 
 ul li a:hover
 {
-    -webkit-transform: rotate(2deg);
-    
-}
-
-
-span
-{
-    position: absolute;
-    visibility: hidden;
-    
+    transform: rotate(2deg);   
 }
 a
 {
@@ -148,18 +139,6 @@ a:hover
 {
     color: red;
 }
-
-span a{
-    clear: both;
-    display: none;
-    background-color: rgb(250, 8, 141);
-    width: 162px;
-    height: 30px;
-    text-align: center;
-    color: red;
-    border-top: 1px solid white;
-    margin-left: -95PX;
-    
 }
 
 .menu ul li:hover ul{
@@ -171,7 +150,6 @@ article
     margin: 20px;
     padding: 25px;
     margin-top: 50px;
-    
     border-radius: 6px;
     color: white;
     background-color: black;
@@ -218,12 +196,22 @@ form {
     align-items: stretch;
     border-radius: 6px;
 }
-input:focus:invalid
+input:focus:invalid 
 {
     border-color: red;
     box-shadow:20px 20px 5px rgb(223, 119, 119); 
 }
-input:focus:valid
+input:focus:valid 
+{
+    border-color:green;
+    box-shadow:20px 20px 5px rgb(160, 247, 160); 
+} 
+textarea:focus:invalid 
+{
+    border-color: red;
+    box-shadow:20px 20px 5px rgb(223, 119, 119);
+}
+textarea:focus:valid 
 {
     border-color:green;
     box-shadow:20px 20px 5px rgb(160, 247, 160); 
@@ -243,26 +231,15 @@ textarea
     border-radius: 6px;
     
 }
-
-  
-
-input :focus 
+input:focus textarea:focus
 {
     border:yellow;
-    box-shadow: black;
+    box-shadow: rgb(221, 4, 4);
     
 }
-
-
-
-
 ::placeholder {
     color:black;
 }
-
-/* Fichier dédié à la prise en compte des paramètres responsives */
-img{
-    max-width:100%;
 }
 /* Exemples de media queries, ici.
 On utilise max > en dessous de la dimension identifiée, le navigateur prend en compte cette nouvelle mise en page */
@@ -283,10 +260,7 @@ On utilise max > en dessous de la dimension identifiée, le navigateur prend en 
     #menu{
         flex-direction: column;
     }
-    
-   
-
-    
+ 
 }
 /* Min fonctionne à l'inverse de max */
 @media (min-width: 992px) {  }

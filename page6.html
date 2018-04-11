@@ -29,41 +29,33 @@
             </li>
             <li>
                 <a href="page4.html">Valeurs</a>
+
             </li>
             <li>
                 <a href="page5.html">Contact</a>
             </li>
             <li>
-                    <a href="page6.html">Livre d'or</a>
-                </li>
+                <a href="page6.html">Livre d'or</a>
+            </li>
         </ul>
     </div>
     <section>
         <form>
 
             <label for="nom">Entrez votre nom:</label>
-            <input type="text" name="nom" id="nom" placeholder="Nom (obligatoire),prénom" required />
+            <input type="text" name="nom" id="nom" placeholder="Nom" />
 
             <label for="email">Entrez votre email:</label>
-            <input type="email" name="email" id= "email" placeholder="E-mail (obligatoire)" required />
-            
-            <label for="mobile">Entrez votre mobile:</label>
-            <input type="text" name="Mobile" id= "mobile" placeholder="Mobile"/>
+            <input type="email" name="email" id="email" placeholder="E-mail (obligatoire)" required="required" maxlength="20" />
 
-            <label for="adresse">Entrez votre adresse:</label>
-            <input type="text" name="Adresse" id="adresse" placeholder="Adresse complète" />
-            
-            <label for="date_de_naissance">Entrez votre date de naissance:</label>
-            <input type="date" name="date" id="date" placeholder="Choisissez une date" />
-            
             <label for="Commentaire">Lachez un com'</label>
-            <textarea rows="5" name="commentaire" id="commentaire" placeholder="Faites un commentaire"></textarea>
-            
-            <button type="submit" value="Valider" class="bouton bouton-valider">
+            <textarea rows="15" name="commentaire" id="commentaire" placeholder="Faites un commentaire(obligatoire)" required></textarea>
+
+            <button type="submit" value="Valider" id="bouton_envoi" class="bouton bouton-valider">
                 <img src="images/icone_valider.png" alt="Valider" />
                 <p>Valider</p>
             </button>
-            
+
             <button type="reset" class="bouton bouton-supprimer">
                 <img src="images/icone_supprimer.png" alt="Supprimer" />
                 <p>Supprimer</p>
@@ -74,6 +66,17 @@
                 <p>Retour à l'acceuil</p>
             </a>
         </form>
+
+
+        <script>
+            
+            var validation = document.getElementById("bouton_envoi");
+            validation.addEventListener("click", f_valid);
+        
+        function f_valid(){
+            
+        }
+        </script>
 
     </section>
 
